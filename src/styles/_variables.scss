@@ -1,0 +1,36 @@
+$primary-color: #ef476f;
+$title-color: #3a929b;
+$text-color: #222222;
+$success-color: #57ce47;
+$danger-color: #ff544e;
+$warning-color: #f9b122;
+$pale-gray: #d0d0d0;
+$dark-gray: #888888;
+$white: #fff;
+
+// gradient
+
+$main-gradient: linear-gradient(
+  90deg,
+  rgba(239, 71, 111, 1) 0%,
+  rgba(255, 209, 102, 1) 100%
+);
+// $main-gradient: linear-gradient(
+//   90deg,
+//   rgba(151, 192, 183, 1) 0%,
+//   rgba(65, 132, 143, 1) 100%
+// );
+
+// fonts
+$primary-font: "Nunito", sans-serif;
+$roboto: "Roboto", sans-serif;
+
+// font size
+
+$title-size: 1.5rem;
+$title-size-mobile: 1.2rem;
+
+// font weight
+
+$title-font-narrow: 400;
+$title-font-black: 900;

@@ -1,0 +1,69 @@
+@import "../../styles/style.scss";
+.search {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: auto;
+  position: relative;
+  &__input {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    transition: all 0.3s ease-in-out;
+    @include atSmall {
+      padding-left: 50px;
+    }
+    width: 100%;
+    border-radius: 50px;
+    border: 2px solid $primary-color;
+    outline: none;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    color: $text-color;
+    &::placeholder {
+      color: $text-color;
+      opacity: 0.7;
+      font-size: 12px;
+      font-family: $primary-font;
+    }
+    &:focus {
+      background: rgba(255, 255, 255, 1);
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    opacity: 0.7;
+    left: 0.6rem;
+    transform: translateY(-50%);
+    @include atSmall {
+      left: 15px;
+    }
+  }
+  &__btn {
+    position: absolute;
+    right: 0;
+    width: 30%;
+
+    button {
+      margin-right: 0;
+      width: 100%;
+      border-radius: 50px;
+      background: $main-gradient;
+      border: none;
+      padding: 11px;
+      color: $white;
+      font-family: $primary-font;
+      cursor: pointer;
+      outline: none;
+      transition: all 0.3s ease;
+      &:hover {
+        box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+        transform: scaleX(1.05);
+      }
+    }
+  }
+}

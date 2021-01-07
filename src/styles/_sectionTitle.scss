@@ -1,0 +1,11 @@
+.section-title {
+  text-transform: uppercase;
+  color: #222222;
+  font-size: $title-size-mobile;
+  font-weight: $title-font-black;
+  font-family: $roboto;
+
+  @include atSmall {
+    font-size: $title-size;
+  }
+}

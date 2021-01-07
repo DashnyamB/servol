@@ -1,0 +1,10 @@
+@import "../../styles/style.scss";
+.logo {
+  @include atSmall {
+    color: $white;
+  }
+  color: $text-color;
+  text-align: center;
+  font-size: $title-size;
+  text-transform: uppercase;
+}

@@ -1,0 +1,28 @@
+@import "../../styles/style.scss";
+
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: $primary-color;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 300;
+  @include atSmall {
+    position: fixed;
+  }
+  &--transparent {
+    background-color: transparent;
+  }
+}
+
+.hide-on-mobile {
+  display: none;
+
+  @include atSmall {
+    display: block;
+  }
+}

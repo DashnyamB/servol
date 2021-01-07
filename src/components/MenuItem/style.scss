@@ -1,0 +1,41 @@
+@import "../../styles/style.scss";
+.menu-item {
+  list-style: none;
+  width: 100%;
+  text-transform: uppercase;
+
+  a {
+    width: 100%;
+    height: auto;
+    display: block;
+    color: $title-color;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: all 0.1s ease-in-out;
+    &:hover {
+      background-color: $primary-color;
+      color: $white;
+    }
+  }
+
+  @include atSmall {
+    margin-right: 0;
+
+    a {
+      color: $white;
+      font-size: 0.8rem;
+      &:hover {
+        color: $white;
+        // background-color: transparent;
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

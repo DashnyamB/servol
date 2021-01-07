@@ -1,0 +1,30 @@
+@import "../../styles/style.scss";
+.service-icon {
+  a {
+    color: $text-color;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+  text-align: center;
+  width: 50%;
+
+  height: 2.5rem;
+  @include atSmall {
+    width: 33%;
+  }
+  @include atMedium {
+    width: 25%;
+  }
+  h1 {
+    font-family: $roboto;
+    font-size: 0.7rem;
+    font-weight: 400;
+    @include atMedium {
+      font-size: 1rem;
+    }
+  }
+}
