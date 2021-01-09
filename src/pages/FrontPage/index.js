@@ -1,10 +1,13 @@
 import React, { useState } from "react";
+import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import LargeHero from "../../components/LargeHero";
+import Menu from "../../components/Menu";
 import MobileMenu from "../../components/MobileMenu";
 import OurAdvantages from "../../components/OurAdvantages";
 import OurServices from "../../components/OurServices";
 import RecommendedServices from "../../components/RecommendedServices";
+import Services from "../../components/Services";
 import Tutorial from "../../components/Tutorial";
 import "./style.scss";
 function FrontPage() {
@@ -26,6 +29,7 @@ function FrontPage() {
       <OurAdvantages />
       <OurServices />
       <Tutorial />
+      <Footer />
     </div>
   );
 }

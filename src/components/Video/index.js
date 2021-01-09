@@ -53,7 +53,7 @@ const Video = (props) => {
   return (
     <div className={css.Video}>
       <video ref={videoRef} data-fullscreen="false">
-        <source src="https://www10.ff-01.com/token=uR9F1Bg4eU30rJ21M2rFpA/1610122369/66.181.0.0/148/7/cf/f8d699db88cb3ce6fbe862b4431d4cf7-480p.mp4" />
+        <source src="https://vjs.zencdn.net/v/oceans.mp4" />
       </video>
       <div className={css.VideoController}>
         <div className={css.Progress}>

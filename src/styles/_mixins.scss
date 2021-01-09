@@ -19,6 +19,20 @@
   padding-bottom: 40px;
 }
 
+@mixin listStyleColumn {
+  padding: 5px;
+  list-style: none;
+  a {
+    text-decoration: none;
+    font-family: $roboto;
+    color: $dark-gray;
+    transition: color 0.3s ease;
+    &:hover {
+      color: $text-color;
+    }
+  }
+}
+
 .wrapper {
   padding-left: 5px;
   padding-right: 5px;

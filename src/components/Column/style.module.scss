@@ -1,0 +1,11 @@
+@import "../../styles/style.scss";
+
+.Column {
+}
+.ColumnList {
+  margin-top: 20px;
+  list-style: none;
+  & > li {
+    @include listStyleColumn;
+  }
+}
