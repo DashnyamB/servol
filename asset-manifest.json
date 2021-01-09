@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/servol/static/css/main.905c1412.chunk.css",
-    "main.js": "/servol/static/js/main.bbd8ca87.chunk.js",
-    "main.js.map": "/servol/static/js/main.bbd8ca87.chunk.js.map",
+    "main.css": "/servol/static/css/main.1b815d37.chunk.css",
+    "main.js": "/servol/static/js/main.86b7667d.chunk.js",
+    "main.js.map": "/servol/static/js/main.86b7667d.chunk.js.map",
     "runtime-main.js": "/servol/static/js/runtime-main.b7347508.js",
     "runtime-main.js.map": "/servol/static/js/runtime-main.b7347508.js.map",
-    "static/js/2.89ba849c.chunk.js": "/servol/static/js/2.89ba849c.chunk.js",
-    "static/js/2.89ba849c.chunk.js.map": "/servol/static/js/2.89ba849c.chunk.js.map",
+    "static/js/2.6a2e7faf.chunk.js": "/servol/static/js/2.6a2e7faf.chunk.js",
+    "static/js/2.6a2e7faf.chunk.js.map": "/servol/static/js/2.6a2e7faf.chunk.js.map",
     "index.html": "/servol/index.html",
-    "static/css/main.905c1412.chunk.css.map": "/servol/static/css/main.905c1412.chunk.css.map",
-    "static/js/2.89ba849c.chunk.js.LICENSE.txt": "/servol/static/js/2.89ba849c.chunk.js.LICENSE.txt",
-    "static/media/1.4a4567b0.jpg": "/servol/static/media/1.4a4567b0.jpg",
+    "static/css/main.1b815d37.chunk.css.map": "/servol/static/css/main.1b815d37.chunk.css.map",
+    "static/js/2.6a2e7faf.chunk.js.LICENSE.txt": "/servol/static/js/2.6a2e7faf.chunk.js.LICENSE.txt",
+    "static/media/1.104b1ea1.jpg": "/servol/static/media/1.104b1ea1.jpg",
     "static/media/style.scss": "/servol/static/media/controls.d3f6802a.png"
   },
   "entrypoints": [
     "static/js/runtime-main.b7347508.js",
-    "static/js/2.89ba849c.chunk.js",
-    "static/css/main.905c1412.chunk.css",
-    "static/js/main.bbd8ca87.chunk.js"
+    "static/js/2.6a2e7faf.chunk.js",
+    "static/css/main.1b815d37.chunk.css",
+    "static/js/main.86b7667d.chunk.js"
   ]
 }
