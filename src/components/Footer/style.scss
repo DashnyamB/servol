@@ -14,7 +14,7 @@
       flex-direction: row;
     }
     .active article ul {
-      height: auto;
+      max-height: 80rem;
       animation: speed 0.3s;
       @include atSmall {
         content: " ";
@@ -46,13 +46,14 @@
 
       article {
         ul {
-          height: 0;
+          max-height: 0;
           overflow: hidden;
           overflow-y: auto;
           margin-top: 5px;
+          transition: max-height 0.5s ease-in-out;
 
           @include atSmall {
-            height: auto;
+            max-height: 80rem;
             font-size: 0.8rem;
           }
           @include atMedium {
@@ -81,14 +82,5 @@
         }
       }
     }
-  }
-}
-
-@keyframes speed {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 100%;
   }
 }

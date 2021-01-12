@@ -1,7 +1,7 @@
 @import "../../styles/style.scss";
 .mobile-menu {
   background-color: $white;
-  width: 270px;
+  width: 80vw;
   height: 100vh;
   position: fixed;
   transition: all 0.3s ease-in-out;
@@ -10,7 +10,7 @@
   &--close {
     opacity: 0;
     top: 0;
-    left: -300px;
+    left: -80vw;
   }
   &--open {
     opacity: 1;

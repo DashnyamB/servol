@@ -1,9 +1,13 @@
 import React from "react";
+import { withRouter, NavLink } from "react-router-dom";
 import "./style.scss";
 const Service = (props) => {
+  const jumpToServicesPage = () => {
+    console.log(props);
+  };
   return (
-    <div className="service-icon">
-      <a href="/">
+    <div className="service-icon" onClick={jumpToServicesPage}>
+      <NavLink to="/services">
         {props.showIcon ? (
           <figure>
             <svg
@@ -19,9 +23,9 @@ const Service = (props) => {
         ) : null}
 
         <h1>{props.title}</h1>
-      </a>
+      </NavLink>
     </div>
   );
 };
 
-export default Service;
+export default withRouter(Service);

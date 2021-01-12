@@ -10,22 +10,16 @@ import RecommendedServices from "../../components/RecommendedServices";
 import Services from "../../components/Services";
 import Tutorial from "../../components/Tutorial";
 import "./style.scss";
-function FrontPage() {
-  const [MobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-  const toggleMobileMenu = () => {
-    setMobileMenuOpen((prevMobileMenuOpen) => !prevMobileMenuOpen);
-    console.log(MobileMenuOpen);
-  };
+function FrontPage(props) {
   return (
     <div className="front-page">
-      <Header toggleMobileMenu={toggleMobileMenu} transparent={true} />
+      <Header toggleMobileMenu={props.toggleMobileMenu} transparent={true} />
       <MobileMenu
-        MobileMenuOpen={MobileMenuOpen}
-        toggleMobileMenu={toggleMobileMenu}
+        MobileMenuOpen={props.MobileMenuOpen}
+        toggleMobileMenu={props.toggleMobileMenu}
       />
       <LargeHero />
-      <RecommendedServices />
+      <RecommendedServices title="Бидний санал болгож буй үйлчилгээнүүд" />
       <OurAdvantages />
       <OurServices />
       <Tutorial />
