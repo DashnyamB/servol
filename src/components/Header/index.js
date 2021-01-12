@@ -6,8 +6,10 @@ import Menu from "../Menu";
 import "./style.scss";
 const Header = (props) => {
   let classes = ["header", "wrapper"];
-  if (props.transparent)
+  if (props.transparent) {
     classes = ["header", "wrapper", "header--transparent", "fixed-header"];
+  }
+
   const headerRef = useRef();
   useEffect(() => {
     window.addEventListener("scroll", () => {

@@ -9,6 +9,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
   &--transparent {
     background-color: transparent;
   }
@@ -16,18 +17,16 @@
 
 .hide-on-mobile {
   display: none;
-
   @include atSmall {
     display: block;
   }
 }
 
 .fixed-header {
-  background-color: $primary-color;
   position: fixed;
   z-index: 300;
-  background-color: transparent;
 }
+
 .sticky-header {
   background-color: $primary-color;
   padding: 10px 0;

@@ -4,15 +4,24 @@ import Header from "../../components/Header";
 import Tutorial from "../../components/Tutorial";
 import MobileMenu from "../../components/MobileMenu";
 import RecommendedServices from "../../components/RecommendedServices";
+
+import "./styles.scss";
+import ServiceCards from "../../components/ServicePageComponents/ServiceCards";
 const ServicePage = (props) => {
   return (
     <div>
-      <Header toggleMobileMenu={props.toggleMobileMenu} transparent={false} />
+      <Header
+        toggleMobileMenu={props.toggleMobileMenu}
+        transparent={false}
+        position="relative"
+      />
       <MobileMenu
         MobileMenuOpen={props.MobileMenuOpen}
         toggleMobileMenu={props.toggleMobileMenu}
       />
+
       <RecommendedServices title="Шилдэг үйлчилгээнүүд" />
+      <ServiceCards />
       <Tutorial />
       <Footer />
     </div>
