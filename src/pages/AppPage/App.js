@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Header from "../../components/Header";
 import MobileMenu from "../../components/MobileMenu";
 import FrontPage from "../FrontPage";
+import ServiceOrderPage from "../ServiceOrderPage";
 import ServicePage from "../ServicePage";
 
 import "./style.scss";
@@ -18,6 +19,12 @@ const App = () => {
       <div className="App">
         <main>
           <Switch>
+            <Route path="/services/order">
+              <ServiceOrderPage
+                MobileMenuOpen={MobileMenuOpen}
+                toggleMobileMenu={toggleMobileMenu}
+              />
+            </Route>
             <Route path="/services">
               <ServicePage
                 MobileMenuOpen={MobileMenuOpen}
@@ -25,10 +32,7 @@ const App = () => {
               />
             </Route>
             <Route path="/">
-              <FrontPage
-                MobileMenuOpen={MobileMenuOpen}
-                toggleMobileMenu={toggleMobileMenu}
-              />
+              <FrontPage />
             </Route>
           </Switch>
         </main>

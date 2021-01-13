@@ -1,10 +1,15 @@
 import React from "react";
+import { NavLink, withRouter } from "react-router-dom";
 
 import "./styles.scss";
 
 const ServiceCard = (props) => {
+  const jumpToOrder = () => {
+    props.history.push("/services/order");
+  };
+
   return (
-    <article className="service-card">
+    <article onClick={jumpToOrder} className="service-card">
       <div className="service-card__image">
         <figure>
           <img
@@ -42,4 +47,4 @@ const ServiceCard = (props) => {
   );
 };
 
-export default ServiceCard;
+export default withRouter(ServiceCard);

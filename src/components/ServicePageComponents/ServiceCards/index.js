@@ -18,7 +18,7 @@ const ServiceCards = (props) => {
         "https://www.adobe.com/content/dam/cc/us/en/creativecloud/photography/discover/portrait-photography/CODERED_B1_portrait_photography-P4a_438x447.jpg.img.jpg",
     },
     {
-      authorID: "11",
+      authorID: "12",
       authorName: "Хашбат Агиймаа",
       authorLevel: "9",
       starRating: "5,0",
