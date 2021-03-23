@@ -12,9 +12,6 @@
   font-family: $roboto;
   transition: all 0.1s;
 
-  &:hover {
-    border-bottom: 5px solid $primary-color;
-  }
   @include atSmall {
     margin-top: 0;
   }

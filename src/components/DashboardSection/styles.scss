@@ -1,0 +1,62 @@
+@import "../../styles/style.scss";
+
+.dashboard-section {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &__user {
+    width: 100%;
+    @include atMedium {
+      width: 30%;
+    }
+  }
+  &__right-side {
+    width: 100%;
+    margin-top: 1rem;
+    &__title {
+      width: 100%;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      background-color: $white;
+      @include boxShadow;
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: $title-color;
+      font-family: $roboto;
+      & > span {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        opacity: 0.8;
+        transition: 0.5s ease;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+    &__services {
+      width: 100%;
+      display: grid;
+      margin-top: 1.5rem;
+      grid-template-columns: 1fr;
+      row-gap: 1rem;
+      @include atSmall {
+        grid-template-columns: 1fr 1fr;
+      }
+      @include atMedium {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      column-gap: 0.8rem;
+    }
+
+    @include atMedium {
+      width: 68%;
+      margin-top: 0;
+    }
+  }
+}

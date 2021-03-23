@@ -3,7 +3,15 @@
   list-style: none;
   width: 100%;
   text-transform: uppercase;
-
+  & > button {
+    padding: 7px 20px;
+    background: none;
+    border: none;
+    border-radius: 15px;
+    color: $white;
+    background: $warning-color;
+    cursor: pointer;
+  }
   a {
     width: 100%;
     height: auto;

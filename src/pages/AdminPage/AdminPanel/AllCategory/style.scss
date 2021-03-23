@@ -1,0 +1,41 @@
+@import "../../../../styles/style.scss";
+
+.all-categories__spinner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.all-categories__list {
+  width: 100%;
+
+  li {
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    &:hover {
+      background-color: $very-pale-gray;
+    }
+    a {
+      width: 100%;
+      color: $text-color;
+      padding: 0.5rem;
+
+      span {
+        border-right: 1px solid $pale-gray;
+        padding-right: 10px;
+      }
+      div {
+        padding: 0 15px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      div:last-child {
+        border: none;
+      }
+    }
+  }
+}

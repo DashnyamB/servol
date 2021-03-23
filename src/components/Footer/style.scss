@@ -24,20 +24,22 @@
       @include atSmall {
       }
       h1 {
-        border: 1px solid $pale-gray;
+        background-color: $primary-color;
+        color: $white;
         padding: 5px;
         font-size: 1.2rem;
         border-radius: 5px;
         position: relative;
-        color: $dark-gray;
         font-family: $roboto;
         pointer-events: none;
         font-weight: 400;
         cursor: pointer;
+
         @include atSmall {
           border: none;
           font-size: 1rem;
           color: $text-color;
+          background-color: transparent;
         }
         @include atMedium {
           font-size: 1.4rem;

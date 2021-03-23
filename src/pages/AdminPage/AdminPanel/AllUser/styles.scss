@@ -1,0 +1,63 @@
+@import "../../../../styles/style.scss";
+
+.all-users__spinner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.all-users {
+  &__name {
+    font-weight: 700;
+  }
+  &__email {
+    font-weight: 700;
+  }
+  &__role--red {
+    color: $primary-color !important;
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+  &__role {
+    color: $success-color;
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+}
+.all-users__list {
+  width: 100%;
+
+  li {
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    &:hover {
+      background-color: $very-pale-gray;
+    }
+    a {
+      width: 100%;
+      color: $text-color;
+      padding: 0.5rem;
+      display: flex;
+
+      span {
+        border-right: 1px solid $pale-gray;
+        padding-right: 10px;
+      }
+      div {
+        padding: 0 15px;
+        width: 15rem;
+        border-right: 1px solid $pale-gray;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      div:last-child {
+        border: none;
+      }
+    }
+  }
+}

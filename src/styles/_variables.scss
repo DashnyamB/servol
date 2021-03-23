@@ -6,13 +6,14 @@ $success-color: #57ce47;
 $danger-color: #ff544e;
 $warning-color: #f9b122;
 $pale-gray: #d0d0d0;
+$very-pale-gray: #f7f7f7;
 $dark-gray: #888888;
 $white: #fff;
 
 // gradient
 
 $main-gradient: linear-gradient(
-  90deg,
+  45deg,
   rgba(239, 71, 111, 1) 0%,
   rgba(255, 209, 102, 1) 100%
 );

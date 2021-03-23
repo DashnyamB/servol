@@ -1,0 +1,56 @@
+@import "../../../../styles/style.scss";
+
+.add-category {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  &__name {
+    display: flex;
+    flex-direction: column;
+    & > input {
+      padding: 10px;
+      width: 50%;
+      background: none;
+      border: 1px solid $pale-gray;
+      outline: none;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      &:hover {
+        border-color: $dark-gray;
+      }
+      &::placeholder {
+        font-weight: 500;
+        font-family: $roboto;
+      }
+    }
+  }
+  &__btn {
+    width: 50%;
+    text-align: center;
+  }
+  &__desc {
+    display: flex;
+    flex-direction: column;
+    & > textarea {
+      padding: 10px;
+      width: 50%;
+      background: none;
+      border: 1px solid $pale-gray;
+      outline: none;
+      height: 15rem;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      overflow-y: scroll;
+      &:hover {
+        border-color: $dark-gray;
+      }
+      &::placeholder {
+        font-weight: 500;
+        font-family: $roboto;
+      }
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+}

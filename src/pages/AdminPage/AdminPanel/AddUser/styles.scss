@@ -1,0 +1,93 @@
+@import "../../../../styles/style.scss";
+
+.add-user {
+  // background: $warning-color;
+  width: 70%;
+  margin: 0 auto;
+  max-height: 30rem;
+  display: flex;
+  flex-direction: column;
+  & > div {
+    margin-top: 0.3rem;
+  }
+  label {
+    font-size: 1.1rem;
+    font-family: $roboto;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: $primary-color;
+  }
+  input {
+    padding: 0.5rem 1rem;
+    outline: none;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid $very-pale-gray;
+    &:focus {
+      border-color: $success-color;
+    }
+    &:hover {
+      border-color: $pale-gray;
+    }
+  }
+  &__fullname {
+    display: flex;
+    flex-direction: column;
+    & > div {
+      display: flex;
+      justify-content: space-between;
+      & > input {
+        width: 50%;
+        &:last-of-type {
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+  &__username {
+    & > div {
+      display: flex;
+      justify-content: space-between;
+      & > input {
+        width: 50%;
+        &:last-of-type {
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+  &__description {
+    display: flex;
+    flex-direction: column;
+    & > textarea {
+      width: 100%;
+      height: 5rem;
+      outline: none;
+      padding: 0.5rem 1rem;
+      max-height: 5rem;
+      border-radius: 5px;
+      border: 1px solid $very-pale-gray;
+      overflow-y: scroll;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      &:focus {
+        border-color: $success-color;
+      }
+      &:hover {
+        border-color: $pale-gray;
+      }
+    }
+  }
+  &__save-button {
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: column;
+    div {
+      display: flex;
+      & > input {
+        margin-right: 1rem;
+      }
+    }
+  }
+}

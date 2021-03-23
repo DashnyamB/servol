@@ -14,12 +14,12 @@
   &:hover {
     transform: scale(1.03);
   }
-  @include atSmall {
-    width: 49.5%;
-  }
-  @include atMedium {
-    width: 24.5%;
-  }
+  // @include atSmall {
+  //   width: 49.5%;
+  // }
+  // @include atMedium {
+  //   width: 24.5%;
+  // }
 
   //   service-card image
   &__image {
@@ -79,7 +79,7 @@
     &__service-title {
       width: 100%;
       & > h2 {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
         font-family: $roboto;
         font-weight: 400;
         color: $text-color;

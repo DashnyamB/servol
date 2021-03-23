@@ -4,7 +4,7 @@ import "./style.scss";
 const Logo = () => {
   return (
     <div className="logo">
-      <NavLink to="/">servol</NavLink>{" "}
+      <NavLink to="/">servol</NavLink>
     </div>
   );
 };

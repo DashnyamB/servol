@@ -1,5 +1,5 @@
 import React from "react";
-import { withRouter, NavLink } from "react-router-dom";
+import { withRouter, NavLink, Link } from "react-router-dom";
 import "./style.scss";
 const Service = (props) => {
   const jumpToServicesPage = () => {

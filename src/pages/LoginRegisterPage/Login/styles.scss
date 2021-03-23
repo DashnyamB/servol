@@ -1,0 +1,67 @@
+@import "../../../styles/style.scss";
+
+.login {
+  display: grid;
+  grid-template-columns: 1fr;
+  overflow: hidden;
+  @include atSmall {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__info {
+    background-image: $main-gradient;
+    background-size: 300%;
+    animation: login-form-info-animation 10s infinite alternate;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    @include atSmall {
+      display: block;
+    }
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    &__title {
+      text-transform: uppercase;
+      padding: 15px;
+      font-size: 1.5rem;
+      color: $warning-color;
+      font-weight: 550;
+      font-family: $roboto;
+    }
+    input {
+      padding: 10px;
+      width: 50%;
+      background: none;
+      border: 1px solid $pale-gray;
+      outline: none;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      &:hover {
+        border-color: $dark-gray;
+      }
+      &::placeholder {
+        font-weight: 500;
+        font-family: $roboto;
+      }
+    }
+    &__button {
+      width: 50%;
+      text-align: center;
+    }
+  }
+}
+
+@keyframes login-form-info-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}

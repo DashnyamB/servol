@@ -1,0 +1,9 @@
+@import "../../styles/style.scss";
+
+.dashboard-header-item {
+  color: $dark-gray;
+  transition: 0.3s ease;
+  &:hover {
+    columns: #222222;
+  }
+}

@@ -5,6 +5,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  cursor: pointer;
+  z-index: 301;
   &--top {
     width: 100%;
     height: 3px;
