@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import "./styles.scss";
 import * as actions from "../../../../redux/actions/registerAction";
-import Spinner from "../../../../components/Spinner";
+import Spinner from "../../../../components/GlobalComponents/Spinner";
 import SaveIcon from "@material-ui/icons/Save";
 const AddUser = (props) => {
   const [userData, setUserData] = useState({

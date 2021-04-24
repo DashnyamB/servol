@@ -1,0 +1,14 @@
+@import "../../../styles/style.scss";
+
+.servol_nav {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+
+  @include atSmall {
+    width: auto;
+    margin-top: 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

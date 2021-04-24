@@ -1,8 +1,8 @@
 import React from "react";
 import Footer from "../../components/Footer";
-import Header from "../../components/Header";
+import Header from "../../components/HeaderComponents/Header";
 import Tutorial from "../../components/Tutorial";
-import MobileMenu from "../../components/MobileMenu";
+import MobileMenu from "../../components/HeaderComponents/MobileMenu";
 import RecommendedServices from "../../components/RecommendedServices";
 
 import "./styles.scss";

@@ -11,6 +11,9 @@
     @include atSmall {
       font-size: 1.2rem;
     }
+    @include atlarge {
+      font-size: 1.5rem;
+    }
   }
   p {
     padding: 0.1rem 0.7rem;
@@ -18,6 +21,9 @@
     color: $text-color;
     @include atSmall {
       font-size: 0.9rem;
+    }
+    @include atlarge {
+      font-size: 1.2rem;
     }
   }
 }

@@ -14,6 +14,8 @@ import usersReducer from "./redux/reducer/usersReducer";
 import userReducer from "./redux/reducer/userReducer";
 import servicesReducer from "./redux/reducer/servicesReducer";
 import serviceReducer from "./redux/reducer/serviceReducer";
+import parentCategoriesReducer from "./redux/reducer/parentCategories";
+import childCategoriesReducer from "./redux/reducer/childCategories";
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
@@ -25,6 +27,8 @@ const reducers = combineReducers({
   userReducer,
   servicesReducer,
   serviceReducer,
+  parentCategoriesReducer,
+  childCategoriesReducer,
 });
 
 const middlewares = [thunk];

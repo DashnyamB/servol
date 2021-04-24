@@ -1,11 +1,11 @@
 import React from "react";
-import DashboardHeader from "../../components/DashboardHeader";
+import DashboardHeader from "../../components/DashboardComponents/DashboardHeader";
 import "./style.scss";
-import Footer from "../../components/Footer";
 import { Route, Switch } from "react-router-dom";
-import DashboardOrder from "../../components/DashboardOrder";
-import DashboardSection from "../../components/DashboardSection";
-import DashboardAddService from "../../components/DashboardAddService";
+import DashboardOrder from "../../components/DashboardComponents/DashboardOrder";
+import DashboardSection from "../../components/DashboardComponents/DashboardSection";
+import DashboardAddService from "../../components/DashboardComponents/DashboardAddService";
+
 function Dashboard() {
   return (
     <div className="dashboard">

@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { Link, withRouter } from "react-router-dom";
-import Spinner from "../../../../components/Spinner";
+import Spinner from "../../../../components/GlobalComponents/Spinner";
 import * as actions from "../../../../redux/actions/userAction";
 import { faTimesCircle, faSpinner } from "@fortawesome/free-solid-svg-icons";
 import "./styles.scss";

@@ -1,0 +1,16 @@
+@import "../../../styles/style.scss";
+
+.service-input {
+  width: 100%;
+  & > input {
+    padding: 1rem 1.5rem;
+    border: 1px solid $pale-gray;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1.1rem;
+    font-family: $primary-font;
+    overflow-wrap: break-word;
+    outline-style: 1px solid;
+    outline-color: $success-color;
+  }
+}

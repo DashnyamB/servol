@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-import Button from "../../../components/Button";
+import Button from "../../../components/GlobalComponents/Button";
 import * as actions from "../../../redux/actions/LoginAction";
 
 import "./style.scss";

@@ -1,5 +1,8 @@
 @import "../../styles/style.scss";
 .service-icon {
+  justify-self: center;
+  text-align: center;
+  width: 100%;
   a {
     color: $text-color;
     text-decoration: none;
@@ -9,22 +12,21 @@
       color: $primary-color;
     }
   }
-  text-align: center;
-  width: 50%;
+  figure {
+    svg {
+      width: 60px !important;
+    }
+  }
 
-  height: 2.5rem;
-  @include atSmall {
-    width: 33%;
-  }
-  @include atMedium {
-    width: 25%;
-  }
   h1 {
     font-family: $roboto;
     font-size: 0.7rem;
     font-weight: 400;
     @include atMedium {
       font-size: 1rem;
+    }
+    @include atlarge {
+      font-size: 1.3rem;
     }
   }
 }

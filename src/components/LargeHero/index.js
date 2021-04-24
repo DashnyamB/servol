@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.scss";
 import largeHeroImg from "../../assets/images/1.jpg";
-import Search from "../Search";
+import Search from "../GlobalComponents/Search";
 function LargeHero() {
   return (
     <section className="large-hero">

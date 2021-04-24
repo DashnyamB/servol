@@ -36,6 +36,7 @@ export const getServicesError = (error) => {
 
 export const addService = (data, photo) => {
   return function (dispatch) {
+    console.log(data);
     dispatch(addServiceStart());
     instance
       .post("/services", data)
@@ -126,7 +127,8 @@ export const getUserServices = (userId) => {
     instance
       .get("/users/" + userId + "/services")
       .then((res) => {
-        dispatch(getUserServicesSuccess(res.data.data));
+        console.log(res.data.services);
+        dispatch(getUserServicesSuccess(res.data.services));
       })
       .catch((err) => {
         dispatch(getUserServicesError(err.response.data.error.message));

@@ -30,8 +30,8 @@ export const autoLoginUser = (userId) => {
         dispatch(loginSuccess(result.data));
       })
       .catch((err) => {
-        // console.log(err);
-        dispatch(loginError(err.response.data.error.message));
+        console.log(err.data);
+        // dispatch(loginError(err.response.data.error.message));
       });
   };
 };

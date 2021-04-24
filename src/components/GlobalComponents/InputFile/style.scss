@@ -1,0 +1,30 @@
+@import "../../../styles/style.scss";
+
+.service-input-file {
+  display: flex;
+  padding: 0.5rem 1rem;
+  max-width: 13rem;
+  background-color: $pale-pink;
+  border-radius: 5px;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  flex-direction: row !important;
+
+  & > input[type="file"] {
+    display: none;
+  }
+  & > label {
+    width: 100%;
+    font-size: 1rem !important;
+    font-family: $roboto !important;
+    pointer-events: none;
+    color: $white !important;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    span {
+      align-self: center;
+    }
+  }
+}

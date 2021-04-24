@@ -13,33 +13,30 @@ const ServiceCard = (props) => {
       <div className="service-card__image">
         <figure>
           <img
-            src={props.serviceInfo.serviceImg}
-            alt={props.serviceInfo.serviceDesc}
+            src={props.serviceInfo.photo}
+            alt={props.serviceInfo.shortDesc}
           />
         </figure>
       </div>
       <div className="service-card__content">
         <div className="service-card__content__author">
           <figure className="service-card__content__author__image">
-            <img
-              src={props.serviceInfo.authorImg}
-              alt={props.serviceInfo.authorName}
-            />
+            <img src={props.authorInfo.photo} alt={props.authorInfo.name} />
           </figure>
           <div className="service-card__content__author__info">
-            <h2>{props.serviceInfo.authorName}</h2>
-            <p>Түвшин : {props.serviceInfo.authorLevel}</p>
+            <h2>{props.authorInfo.name}</h2>
+            <p>Түвшин : {props.authorInfo.level}</p>
           </div>
         </div>
         <div className="service-card__content__service-title">
-          <h2>{props.serviceInfo.serviceDesc}</h2>
+          <h2>{props.serviceInfo.shortDesc}</h2>
         </div>
         <div className="service-card__content__rating">
           <div className="service-card__content__rating__star">
-            {props.serviceInfo.starRating}
+            {props.serviceInfo.rating}
           </div>
           <div className="service-card__content__rating__price">
-            Үнэ : {props.serviceInfo.servicePrice}
+            Үнэ : {props.serviceInfo.price}
           </div>
         </div>
       </div>

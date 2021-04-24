@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../../components/Footer";
-import Header from "../../components/Header";
-import MobileMenu from "../../components/MobileMenu";
+import Header from "../../components/HeaderComponents/Header";
+import MobileMenu from "../../components/HeaderComponents/MobileMenu";
 import OrderInfo from "../../components/ServiceOrderPageComponent/OrderInfo";
 
 const ServiceOrderPage = (props) => {

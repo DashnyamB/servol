@@ -1,19 +1,13 @@
 import React from "react";
-import Video from "../Video";
+import Video from "../GlobalComponents/Video";
 import "./style.scss";
 
 const Tutorial = () => {
   return (
     <section className="tutorial wrapper">
-      <div className="tutorial__video">
-        <Video />
-      </div>
-      <div className="tutorial__video">
-        <Video />
-      </div>
-      <div className="tutorial__video">
-        <Video />
-      </div>
+      <Video />
+      <Video />
+      <Video />
     </section>
   );
 };

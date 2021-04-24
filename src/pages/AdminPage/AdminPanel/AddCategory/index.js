@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
 import { Redirect } from "react-router-dom";
-import Button from "../../../../components/Button";
-import Spinner from "../../../../components/Spinner";
+import Button from "../../../../components/GlobalComponents/Button";
+import Spinner from "../../../../components/GlobalComponents/Spinner";
 import * as actions from "../../../../redux/actions/categoriesAction";
 import "./style.scss";
 const AddCategory = (props) => {

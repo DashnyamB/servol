@@ -1,0 +1,15 @@
+@import "../../../styles/style.scss";
+
+.service-textarea {
+  width: 100%;
+  & > textarea {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    font-family: $primary-font;
+    outline-color: $success-color;
+    min-height: 5rem;
+    border: 1px solid $pale-gray;
+    border-radius: 5px;
+    width: 100%;
+  }
+}
